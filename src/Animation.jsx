@@ -7,7 +7,7 @@ const Animation = () => {
     return (
         <>
             <div >
-                <img src={Update} style={{ height: "90vh", width: "100vw", position: "relative" }} alt="updates" />
+                <img src={Update} style={{ height: "93vh", width: "99vw", position: "relative" }} alt="updates" />
                 <Button href="#scrolling" style={{ backgroundColor: "white", position: "absolute", bottom: 0, left: "48vw", borderRadius: "20px", height: "30px", width: "30px", opacity: "0.5" }}><ExpandMoreIcon /></Button>
             </div>
         </>
