@@ -1,52 +1,72 @@
 import React from 'react';
-import Cources from "./poster/cources.jpg";
+import Sponser1 from "./poster/sponser1.jpeg";
+import Sponser2 from "./poster/sponser2.jpeg";
+import Sponser3 from "./poster/sponser3.png";
+
 
 export default function SponsorCarousel() {
-    var counter = 1;
+	const Handlenext = () =>{
+		const images = document.getElementsByClassName("carousel-item")
+		for(let i=0;i < images.length;i++)
+		{
+			if(images[i].classList.contains("active")){
+				images[i].classList.remove("active");
+				images[(i+1)%(images.length)].classList.add("active")
+				break;
+			}
+		}
+	}
+    
+	const Handleprev = () =>{
+		const images = document.getElementsByClassName("carousel-item")
+		for(let i=0;i < images.length;i++)
+		{
+			if(images[i].classList.contains("active")){
+				images[i].classList.remove("active");
+				if(i > 0){
+					images[(i-1)].classList.add("active")
+				}else{
+					images[images.length].classList.add("active")
+				}
+				break;
+			}
+		}
+	}
 
-    setTimeout(function () {
-        document.getElementById('radio' + counter.toString()).checked = true;
-        counter++;
-        if (counter > 4) {
-            counter = 1;
-        }
-    }, 3000);
-
+	setInterval(
+		function(){
+			Handlenext()
+		},3000)
+    
     return (
-
-        <div className="slider-container">
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1" />
-                    <input type="radio" name="radio-btn" id="radio2" />
-                    <input type="radio" name="radio-btn" id="radio3" />
-                    <input type="radio" name="radio-btn" id="radio4" />
-                    <div class="slide first">
-                        <img src={Cources} alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src={Cources} alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src={Cources} alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src={Cources} alt="" />
-                    </div>
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-                </div>
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-            </div>
-        </div>
+        <>
+<section class="homeSlider" id="scrolling"> 
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active" id="card1">
+				<div class="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser3} alt="Event" class="img-fluid"/>
+				</div>
+			</div>
+			<div class="carousel-item" id="card2">
+				<div class="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser2} alt="Event" class="img-fluid"/>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser1} alt="Event" class="img-fluid"/>
+				</div>
+			</div>
+		</div>
+		<button onClick={Handleprev} class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		</button>
+		<button onClick={Handlenext} class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		</button>
+	</div>
+</section>
+</>
     );
 }

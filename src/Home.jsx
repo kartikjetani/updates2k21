@@ -3,7 +3,8 @@ import Navbar from "./Navbar";
 import Events from "./Events";
 import Animation from "./Animation";
 import Footer from "./Footer";
-import Developer_Coordinator from "./components/Developer_Coordinator"
+import DeveloperCoordinator from "./components/Developer_Coordinator";
+import SponsorCarousel from "./SponsorCarousel";
 
 const Home = () => {
 
@@ -11,8 +12,9 @@ const Home = () => {
     <>
       <Navbar />
       <Animation />
+      <SponsorCarousel/>
       <Events />
-      <Developer_Coordinator/>
+      <DeveloperCoordinator/>
       <Footer />
       </>
   );

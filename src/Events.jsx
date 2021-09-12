@@ -1,14 +1,12 @@
 import React from 'react'
 import EventCard from "./components/EventCard";
-import { NavLink, useHistory } from "react-router-dom";
-import Cources from "./poster/cources.jpg";
+import { NavLink } from "react-router-dom";
 
 const Events = () => {
-    const history = useHistory()
     return (
         <>
             <div id="non-tech">
-                <div id="scrolling" class="mx-auto" style={{ color: "white", textAlign: "center" }}>
+                <div class="mx-auto" style={{ color: "white", textAlign: "center" }}>
                     <p style={{ margin: "12px 0px 0px 12px"}} className="title">Non-Technical Events :</p>
                 </div>
                 <div className="row mx-auto" >

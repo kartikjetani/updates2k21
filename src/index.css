@@ -68,12 +68,6 @@ code {
   border: none;
 }
 
-.card{
-  background-color:black !important;
-  display: block !important;
-  border-radius: 30px !important;
-}
-
 .photo {
   width:100px;
   height: 100px;
@@ -204,7 +198,6 @@ code {
 	
 }
 
-
 /*section coordinator and developers*/
 .leader-image {
 	border-radius: 50%;
@@ -235,3 +228,56 @@ code {
 	width: 100%;
 	z-index: 1;
 }
+
+/* =================================== */
+/*  Home Full Screen Slider
+/* =================================== */
+.homeSlider .carousel-inner,
+.homeSlider .carousel-item {
+    height: 200px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;  
+}
+.homeSlider .carousel-caption {
+    position: absolute;
+    bottom: 0px;
+}
+.homeSlider .carousel-caption a {
+	margin-left:30em;
+}
+.homeSlider .carousel-caption h2 {
+    top: 45%;
+    right:0;
+    left:0;
+    font-size: 50px;
+    padding:0.7rem;
+    display:inline-block;
+    position:absolute;
+    color:#fff;
+    font-weight: 800;
+}
+.homeSlider .carousel-caption h4 {
+    top: 45%;
+    right:0;
+    font-size: 2rem;
+    padding:0.7rem;
+    display:inline-block;
+    position:absolute;
+	line-height:1.3;
+}
+.homeSlider .carousel-caption .btn-sm {
+    top:65%;
+    left:0;
+    position:absolute;
+    background-color:#fff;
+    border-color:#fff;
+}
+.homeSlider .carousel-caption .btn-sm:hover {
+    background-color:#045a5c;
+    border-color:#fff;
+}
+
+.img-fluid{
+  height: 177px !important;
+  width: 100% !important;}
