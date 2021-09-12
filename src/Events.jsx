@@ -7,7 +7,7 @@ const Events = () => {
         <>
             <div id="non-tech">
                 <div class="mx-auto" style={{ color: "white", textAlign: "center" }}>
-                    <p style={{ margin: "12px 0px 0px 12px"}} className="title">Non-Technical Events :</p>
+                    <p style={{ margin: "12px 0px 0px 12px",fontSize:"20px"}} className="title">Non-Technical Events</p>
                 </div>
                 <div className="row mx-auto" >
                     <NavLink className="col-sm-12 col-md-6 col-lg-3 my-2 btn text-left" to="/Valorant">
@@ -41,7 +41,7 @@ const Events = () => {
                 </div>
                 <div id="tech">
                     <div className="mx-auto" style={{ color: "white", textAlign: "center" }}>
-                        <p style={{ margin: "12px 0px 0px 12px" }} className="title">Technical Events :</p>
+                        <p style={{ margin: "12px 0px 0px 12px",fontSize:"20px" }} className="title">Technical Events</p>
                     </div>
                     <div className="row mx-auto">
                         <NavLink className="col-sm-12 col-md-6 col-lg-3 my-2 btn text-left" to="/Abhivyakti">
