@@ -147,9 +147,9 @@ const event_list = {
     Tagline: "Debate: Gladiatorial Combat of the Intellect.",
     Description: [
       "Rules",
-      " 1. In 1st round, there will be a quiz of 20 questions with 4 multiple choices in which you have to choose correct one. There will be no negative marking. Quiz will be based on logical reasoning, current affairs and general knowledge. 5-7 Teams which will gain the highest score will be selected for the next round. ( 2 members for each team)(30 minutes for the quiz)",
-      " 2. 2nd round is the debate round that is semi final round in which the team has to prepare on topics given and they will have to speak for the topic within 2-3 min. According to the selection criteria jury will select the top 2 teams for the 3rd round.(1 hour or 1 hour 30 mins)",
-      " 3. Third round will a presentation round.Two teams will be selected from the debate(by the jury based on their scores) and will be given a time of 15-20 mins before the final round to prepare the presentation.(1 hour ) ",
+      " 1. In 1st round, there will be a quiz of 20 questions with 4 multiple choices in which you have to choose correct one. There will be no negative marking. Quiz will be based on logical reasoning, current affairs and general knowledge. 5-7 Teams which will gain the highest score will be selected for the next round. ( 2 members for each team)",
+      " 2. 2nd round is the debate round that is semi final round in which the team has to prepare on topics given and they will have to speak for the topic within 2-3 min. According to the selection criteria jury will select the top 2 teams for the 3rd round.",
+      " 3. Third round will a presentation round.Two teams will be selected from the debate(by the jury based on their scores) and will be given a time of 15-20 mins before the final round to prepare the presentation. ",
       " 4. Winner of ABHIVYAKTI will be selected on the basis of criteria like speech,explanation power and many more. ",
       " 5. Equal participation of students will be required in a team.",
       "Debate Topics:",
