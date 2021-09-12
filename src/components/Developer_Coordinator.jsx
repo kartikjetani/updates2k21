@@ -47,8 +47,8 @@ const Developer_Coordinator = () => {
 		<>
 			<section class="section-3a p-4">
 				<div class="container-fluid p-5">
-				<div className="mx-auto my-3" style={{ color: "white", textAlign: "center" }}>
-						<p style={{ margin: "12px 0px 4px 12px",fontSize:"15px"}} className="title">Co-Ordinators</p>
+					<div className="mx-auto my-3" style={{ color: "white", textAlign: "center" }}>
+						<p style={{ margin: "12px 0px 4px 12px",fontSize:"15px"}} className="title">Coordinators</p>
 					</div>
 					<div class="row">
 						<CoordinatorCard name="Varun Bhuva" designation="Co-odinator" year="4th Yr-Div1" ImgSrc={Varun}/>
@@ -56,13 +56,13 @@ const Developer_Coordinator = () => {
 						<CoordinatorCard name="Nency Badiyani" designation="Co-odinator" year="4th Yr-Div2" ImgSrc={Nency}/>
 						<CoordinatorCard name="Abhi Patel" designation="Co-odinator" year="3rd Yr-Div1" ImgSrc={Abhi}/>
 					</div>
-					<div className="mx-auto" style={{ color: "white", textAlign: "center" }}>
-						<p className="my-3" className="title">Developers</p>
+					<div className="mx-auto my-3 " style={{ color: "white", textAlign: "center" }}>
+						<p className="title" style={{ margin: "12px 0px 4px 12px",fontSize:"15px"}}>Developers</p>
 					</div>
-					<div class="row mx-5">
-						<DeveloperCard name="Kartik Jetani" designation="Backend Developer" year="3rd Yr-Div1" ImgSrc={Kartik}/>
+					<div class="row mx-auto">
 						<DeveloperCard name="Keyur Kakadiya" designation="Frontend Developer" year="3rd Yr-Div1"  ImgSrc={Keyur}/>
-						<DeveloperCard name="Pritam Davda" designation="Frontend Developer" year="2nd Yr-Div2"  ImgSrc={Pritam}/>
+						<DeveloperCard name="Kartik Jetani" designation="Backend Developer" year="3rd Yr-Div1" ImgSrc={Kartik}/>
+						<DeveloperCard name="Pritam Davda" designation="Frontend Developer" year="2nd Yr-Div1"  ImgSrc={Pritam}/>
 					</div>
 				</div>
 			</section>

@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button';
 import Alert from '@material-ui/lab/Alert';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
@@ -102,7 +101,7 @@ export default function Login() {
                 setTimeout(() => {
                     setSuccess(false)
                 }, 3000);
-                history.goBack();
+                history.push("/");
             } else if (response.message === "INVALID_PASSWORD") {
                 setAlert(true);
                 setAlertmsg("Invalid password")

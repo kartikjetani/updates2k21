@@ -11,7 +11,7 @@ const Footer = () => {
           <Container maxWidth="md">
             <Toolbar>
               <Typography className="mx-auto" variant="body1" style={{bottom:0}}>
-              Ⓒsarvajanik collage of engineering and tecgnology
+              ⒸSarvajanik collage of engineering and tecgnology
               </Typography>
             </Toolbar>
           </Container>

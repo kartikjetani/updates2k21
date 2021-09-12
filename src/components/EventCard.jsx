@@ -1,5 +1,4 @@
 import React from 'react';
-import Cources from "../poster/cources.jpg";
 
 const EventCard = (props) => {
   return (

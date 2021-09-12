@@ -17,7 +17,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import { NavLink } from 'react-router-dom';
+import { NavLink ,useHistory} from 'react-router-dom';
 
 
 function Copyright() {
@@ -69,6 +69,8 @@ export default function SignUp() {
     const [success, setSuccess] = React.useState(false);
     const [checked, setChecked] = React.useState(false);
     const [alertmsg, setAlertmsg] = React.useState("");
+
+    const history = useHistory();
 
     useEffect(() => {
         setTimeout(() => {
@@ -129,6 +131,7 @@ export default function SignUp() {
             } else if (response.message === "SUCCESS") {
                 setSuccess(true);
                 setAlertmsg("Hurray! Sign up Successfull. You can now login.")
+                history.push("/login")
                 setTimeout(() => {
                     setSuccess(false)
                 }, 10000);

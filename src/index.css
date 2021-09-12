@@ -97,7 +97,7 @@ code {
   position: relative;
   display: block;
   height: 100%;  
-  border-radius: calc(var(--curve) * 1px);
+  border-radius: 20px !important;
   overflow: hidden;
   text-decoration: none;
 }

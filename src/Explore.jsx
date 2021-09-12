@@ -1,5 +1,4 @@
 import React from 'react'
-import Cources from "./poster/cources.jpg";
 import Button from '@material-ui/core/Button';
 import Navbar from "./Navbar";
 import Dialog from '@material-ui/core/Dialog';
@@ -16,7 +15,7 @@ const event_list = {
     Eventname: "valorant",
     Eventtime: "",
     Eventvanue: "",
-    Tagline: "game is good",
+    Tagline: "Continue to fight,Continue to win",
     Description: [
       "Short event Description: ",
       "It is a gaming(PC) tournament where several teams will be held up against each other and in order to win, one team will have to dominate others by winning. ",
@@ -205,7 +204,7 @@ const event_list = {
     Eventname: "Predictaholic",
     Eventtime: "",
     Eventvanue: "",
-    Tagline: "foresee the inevitable",
+    Tagline: "Foresee The Inevitable",
     Description: [
       "Event Description:",
       "An event where you will be predicting the cricket score.",
@@ -367,7 +366,7 @@ const event_list = {
     ]
   },
   BlindCode: {
-    Eventname: "Blind Code",
+    Eventname: "Blind Coding",
     Eventtime: "",
     Eventvanue: "",
     Tagline: "“Code beyond your vision",
@@ -484,7 +483,8 @@ const Explore = (props) => {
     }).then(res => res.json())
 
     console.log(response);
-    console.log("submitted")
+    console.log("submitted");
+    setOpen(false);
   }
 
   const handleClose = () => {
@@ -515,7 +515,7 @@ const Explore = (props) => {
                   {success && <Alert severity="success">{alertmsg}</Alert>}
                   {alert && <Alert severity="error">{alertmsg}</Alert>}
                 </div>
-                {(EventName === "BidWiser" || EventName === "BingeWatch" || EventName === "Zodiac" || EventName == "CodeStorm" || EventName == "ScvengerHunt" || EventName === "Avishkar" || EventName === "Abhivyakti" || EventName === "Predictaholic") && <div className="my-4">
+                {(EventName === "BidWiser" || EventName === "BingeWatch" || EventName === "Zodiac" || EventName === "CodeStorm" || EventName === "ScvengerHunt" || EventName === "Avishkar" || EventName === "Abhivyakti" || EventName === "Predictaholic") && <div className="my-4">
                   <span className="mx-2">Member 2:</span>
                   <TextField
                     id="Enrollment2"

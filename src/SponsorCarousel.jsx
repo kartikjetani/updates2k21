@@ -3,7 +3,6 @@ import Sponser1 from "./poster/sponser1.jpeg";
 import Sponser2 from "./poster/sponser2.jpeg";
 import Sponser3 from "./poster/sponser3.png";
 
-
 export default function SponsorCarousel() {
 	const Handlenext = () =>{
 		const images = document.getElementsByClassName("carousel-item")
