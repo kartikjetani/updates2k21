@@ -10,7 +10,6 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
       <Animation />
       <SponsorCarousel/>
       <Events />

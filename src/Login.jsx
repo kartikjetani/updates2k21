@@ -4,7 +4,8 @@ import Button from '@material-ui/core/Button';
 import Alert from '@material-ui/lab/Alert';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
@@ -13,6 +14,10 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { NavLink ,useHistory} from 'react-router-dom';
+// import InputLabel from '@material-ui/core/InputLabel';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import FormControl from '@material-ui/core/FormControl';
+// import Select from '@material-ui/core/Select';
 
 function Copyright() {
     return (
@@ -49,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Login() {
     const classes = useStyles();
+
     const [enrollment, setEnrollment] = React.useState('');
     const [password, setPassword] = React.useState('');
     const [alertmsg, setAlertmsg] = React.useState('');
@@ -110,6 +116,7 @@ export default function Login() {
                 setAlert(true);
                 setAlertmsg("Please try again later. or Contact Co-ordinators");
             }
+
         } catch {
             setAlert(true);
             setAlertmsg("Oops! Something went wrong.")
@@ -121,10 +128,11 @@ export default function Login() {
 
     return (
         <Container component="main" maxWidth="xs" style={{ backgroundColor: "white", borderRadius: "10px" }}>
-            <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "30vw" }} >
+            <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "25rem" }} >
                 {alert && <Alert severity="error">{alertmsg}</Alert>}
                 {success && <Alert severity="success">{alertmsg}</Alert>}
             </div>
+
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
@@ -135,6 +143,7 @@ export default function Login() {
                 </Typography>
                 <form className={classes.form} noValidate>
                     <Grid container spacing={2}>
+
                         <Grid item xs={12}>
                             <TextField
                                 variant="outlined"
@@ -157,7 +166,10 @@ export default function Login() {
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                         </Grid>
+
+
                     </Grid>
+
 
                     <Button
                         type="submit"
