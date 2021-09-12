@@ -2,6 +2,7 @@ import React from 'react';
 import Sponser1 from "./poster/sponser1.jpeg";
 import Sponser2 from "./poster/sponser2.jpeg";
 import Sponser3 from "./poster/sponser3.png";
+import Sponser4 from "./poster/sponser4.png";
 
 
 export default function SponsorCarousel() {
@@ -33,14 +34,18 @@ export default function SponsorCarousel() {
 		}
 	}
 
-	setInterval(
-		function(){
-			Handlenext()
-		},3000)
+	React.useEffect(() => {
+		setInterval(
+			function(){
+				Handlenext()
+			},3000)
+		
+	}, [])
+
     
     return (
         <>
-<section class="homeSlider" id="scrolling"> 
+<section class="homeSlider" style={{marginTop:"20px"}} id="scrolling"> 
 	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active" id="card1">
@@ -56,6 +61,11 @@ export default function SponsorCarousel() {
 			<div class="carousel-item">
 				<div class="carousel-caption d-sm-none d-md-block">
 				<img src={Sponser1} alt="Event" class="img-fluid"/>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser4} alt="Event" style={{backgroundColor:"white"}} class="img-fluid"/>
 				</div>
 			</div>
 		</div>

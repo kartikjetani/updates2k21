@@ -27,11 +27,12 @@ const Navbar = () => {
         <ul>
         <li variant="h6" className={classes.title} style={{position:"absolute",left:0}}>
               <img className="mx-2" src={Logo} style={{height:"20px",width:"20px"}} alt="logo"/>updates2k21
-        </li>
+              </li>
           <li className="navigation-bar mr-5"><a href="https://www.facebook.com/Computer-Engineering-Department-SCET-106234227938812/"><FacebookIcon /></a></li>
-          <li className="navigation-bar mr-5"><a href="https://instagram.com/scet.co.dept?utm_medium=copy_link"><InstagramIcon /></a></li>
+          <li className="navigation-bar mr-5"><a href="https://www.instagram.com/updates2021_scet/?utm_medium=copy_link"><InstagramIcon /></a></li>
+          <li className="navigation-bar mr-5"><NavLink to="/">Home</NavLink></li>
           {(!islogin)?  <><li className="navigation-bar mr-5"><NavLink to="/signup">Signup</NavLink></li>
-          <li className="navigation-bar mr-5"><NavLink to="/login">Login</NavLink></li></> :<li className="navigation-bar mr-5" onClick={()=>{localStorage.setItem("token","");setIslogin(false)}} > Logout </li>  }
+          <li className="navigation-bar mr-5"><NavLink to="/login">Login</NavLink></li></> :<li className="navigation-bar mr-5" style={{cursor:'pointer'}} onClick={()=>{localStorage.setItem("token","");setIslogin(false)}} >Logout </li>  }
         </ul>
       </nav>
     </>

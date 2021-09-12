@@ -4,12 +4,14 @@ import Home from "./Home";
 import Explore from "./Explore";
 import SignUp from "./Signup";
 import Login from "./Login";
+import Navbar from "./Navbar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
   return (
     <>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
