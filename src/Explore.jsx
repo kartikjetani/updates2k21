@@ -402,25 +402,33 @@ const Explore = (props) => {
   const [enrollment3, setEnrollment3] = React.useState('');
   const [alert, setAlert] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
+
   const location = useLocation()
   const path = location.pathname
   const EventName = path.substr(1, path.length)
+
   const data = event_list[EventName]
+
 
   React.useEffect(() => {
     setTimeout(() => {
       setAlert(false);
       setSuccess(false);
     }, 5000)
+
   }, [alert, success])
+
 
   const handleClickOpen = () => {
     setOpen(true);
+    if (EventName === "Valorant") {
+      window.open("https://forms.gle/TBsDTaywqSUe6MjeA")
+      setOpen(false);
+    }
   };
 
-  window.scroll(0,0);
-  
   const verifyHandler = async (enroll) => {
+
     let bodydata = {
       "enrollment": enroll,
       "eventname": EventName
@@ -437,7 +445,7 @@ const Explore = (props) => {
 
     if (response.message === "USER_NOT_EXIST") {
       setAlert(true);
-      setAlertmsg(enroll + " Enrollment not exist. Tell them to register first.");
+      setAlertmsg(enroll + " Enrollment not exist. Tell them to Signup first.");
       return;
     } else if (response.message === "ALREADY_REGISTERED") {
       setAlert(true);
@@ -448,9 +456,11 @@ const Explore = (props) => {
       setAlertmsg(response.desc);
       return;
     }
+
+
   }
   const handleSubmit = async () => {
-    if (localStorage.getItem("token") === "") {
+    if (sessionStorage.getItem("token") === "") {
       setAlert(true);
       setAlertmsg("Please login to register.");
       return;
@@ -466,7 +476,7 @@ const Explore = (props) => {
 
     let bodydata = {
       "eventname": EventName,
-      "token": localStorage.getItem("token"),
+      "token": sessionStorage.getItem("token"),
       "members": members
     }
     console.log("bodydata", bodydata);
@@ -478,16 +488,36 @@ const Explore = (props) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(bodydata),
-    }).then(res => res.json())
+    }).then(res => res.json()).catch(() => {
+      setAlert(true);
+      setAlertmsg("Oops! Something went wrong. please try again later.");
+    })
 
+    // setOpen(false);
+    if (!response) {
+      return
+    }
+    else if (response.message === "USER_NOT_EXIST") {
+      setAlert(true);
+      setAlertmsg(response.desc)
+    } else if (response.message === "SUCCESS") {
+      setSuccess(true);
+      setAlertmsg(response.desc)
+      setTimeout(() => {
+        setSuccess(false)
+      }, 10000);
+    } else if (response.message === "ALREADY_REGISTERED") {
+      setAlert(true);
+      setAlertmsg(response.desc);
+    }
     console.log(response);
-    console.log("submitted");
-    setOpen(false);
+    console.log("submitted")
   }
 
   const handleClose = () => {
     setOpen(false);
   }
+
 
   return (
     <>

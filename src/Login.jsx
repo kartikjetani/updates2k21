@@ -95,13 +95,13 @@ export default function Login() {
                 setAlert(true);
                 setAlertmsg("Seems like you are new. please sign up and try again.")
             } else if (response.message === "LOGIN_SUCCESSFUL") {
-                localStorage.setItem("token",response.token)
+                sessionStorage.setItem("token",response.token)
                 setSuccess(true);
                 setAlertmsg("Congrats! you are logged in.")
                 setTimeout(() => {
                     setSuccess(false)
                 }, 3000);
-                history.push("/");
+                history.goBack();
             } else if (response.message === "INVALID_PASSWORD") {
                 setAlert(true);
                 setAlertmsg("Invalid password")
@@ -116,6 +116,7 @@ export default function Login() {
         console.log(response);
 
     }
+
 
 
     return (

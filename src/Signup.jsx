@@ -17,7 +17,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import { NavLink ,useHistory} from 'react-router-dom';
+import { NavLink,useHistory } from 'react-router-dom';
 
 
 function Copyright() {
@@ -76,10 +76,12 @@ export default function SignUp() {
         setTimeout(() => {
             setAlert(false);
         }, 5000)
+
     }, [alert, success])
 
     async function onSubmitHandler(e) {
         e.preventDefault();
+
         if (fname === "" || lname === '' || pmail === '' || branch === '' || mobile === "" || password === "" || enrollment === "" || year==="" ) {
             setAlert(true);
             setAlertmsg("Fill required details.")
@@ -115,7 +117,6 @@ export default function SignUp() {
             "personalid": pmail
         }
 
-        try {
             var response = await fetch("http://localhost:5000/signup", {
                 method: "POST",
                 headers: {
@@ -123,36 +124,39 @@ export default function SignUp() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(formData),
-            }).then(res => res.json())
+            }).then(res => res.json()).catch(()=>{
+                setAlert(true);
+                setAlertmsg("Oops! Something went wrong. please try again later.");
+            })
 
-            if (response.message === "USER_EXIST") {
+            if(!response){
+                return
+            }
+            else if (response.message === "USER_EXIST") {
                 setAlert(true);
                 setAlertmsg("User Already Exist.")
             } else if (response.message === "SUCCESS") {
                 setSuccess(true);
                 setAlertmsg("Hurray! Sign up Successfull. You can now login.")
-                history.push("/login")
                 setTimeout(() => {
                     setSuccess(false)
-                }, 10000);
+                history.push("/login");
+                }, 2000);
             } else {
                 setAlert(true);
                 setAlertmsg("Please try again later. or Contact Co-ordinators");
             }
-        } catch {
-            setAlert(true);
-            setAlertmsg("Oops! Something went wrong. please try again later.");
-        }
-
+    
     }
 
 
     return (
         <Container component="main" maxWidth="xs" style={{ backgroundColor: "white", borderRadius: "10px" }}>
-            <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "30vw" }} >
+            <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "25rem" }} >
                 {alert && <Alert severity="error">{alertmsg}</Alert>}
                 {success && <Alert severity="success">{alertmsg}</Alert>}
             </div>
+
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
@@ -221,6 +225,7 @@ export default function SignUp() {
                                 id="Password"
                                 onChange={(e) => setPassword(e.target.value)}
                             />
+                            <p style={{color:"red"}}>  Password cannot be changed so set accordingly.</p>
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
@@ -246,7 +251,7 @@ export default function SignUp() {
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <FormControl required variant="outlined" className={classes.formControl}>
+                            <FormControl required variant="outlined" style={{width:"9rem"}} className={classes.formControl}>
                                 <InputLabel id="demo-simple-select-outlined-label">Department</InputLabel>
                                 <Select
                                     labelId="demo-simple-select-outlined-label"
@@ -268,7 +273,7 @@ export default function SignUp() {
                             </FormControl>
                         </Grid>
                        {(branch==="CO" || branch === "EL")? <Grid item xs={12} sm={6} >
-                            <FormControl required variant="outlined" className={classes.formControl}>
+                            <FormControl required variant="outlined" style={{width:"9rem"}}  className={classes.formControl}>
                                 <InputLabel id="demo-simple-select-outlined-label">Shift</InputLabel>
                                 <Select
                                     labelId="demo-simple-select-outlined-label"
@@ -284,13 +289,12 @@ export default function SignUp() {
                             </FormControl>
                         </Grid>:null}
                         <Grid item xs={12} sm={6} >
-                            <FormControl variant="outlined" className={classes.formControl}>
+                            <FormControl variant="outlined" required  style={{width:"9rem"}} className={classes.formControl}>
                                 <InputLabel id="demo-simple-select-outlined-label">Year</InputLabel>
                                 <Select
                                     labelId="demo-simple-select-outlined-label"
                                     id="demo-simple-select-outlined"
                                     value={year}
-                                    required
                                     onChange={(e) => setYear(e.target.value)}
                                     label="Year"
                                 >
@@ -304,9 +308,11 @@ export default function SignUp() {
                             <FormControlLabel
                                 control={<Checkbox required checked={checked} onChange={() => setChecked(!checked)} color="primary" />}
                                 label="I'm hereby declare that all the above details are correct and certificates will be given according to that details."
+
                             />
                         </Grid>
                     </Grid>
+
 
                     <Button
                         type="submit"

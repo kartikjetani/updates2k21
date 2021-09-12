@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const classes = useStyles();
-  const [islogin , setIslogin] = React.useState((localStorage.getItem("token")!==""));
+  console.log(sessionStorage.getItem("token"));
+  const [islogin , setIslogin] = React.useState((sessionStorage.getItem("token")!=="" && (sessionStorage.getItem("token")!==null)));
 
   return (
     <>
@@ -31,7 +32,7 @@ const Navbar = () => {
           <li className="navigation-bar mr-5"><a href="https://www.facebook.com/Computer-Engineering-Department-SCET-106234227938812/"><FacebookIcon /></a></li>
           <li className="navigation-bar mr-5"><a href="https://instagram.com/scet.co.dept?utm_medium=copy_link"><InstagramIcon /></a></li>
           {(!islogin)?  <><li className="navigation-bar mr-5"><NavLink to="/signup">Signup</NavLink></li>
-          <li className="navigation-bar mr-5"><NavLink to="/login">Login</NavLink></li></> :<li className="navigation-bar mr-5" onClick={()=>{localStorage.setItem("token","");setIslogin(false)}} > Logout </li>  }
+          <li className="navigation-bar mr-5"><NavLink to="/login">Login</NavLink></li></> :<li className="navigation-bar mr-5" style={{cursor:'pointer'}}  onClick={()=>{sessionStorage.setItem("token","");setIslogin(false)}} >Logout </li>  }
         </ul>
       </nav>
     </>
