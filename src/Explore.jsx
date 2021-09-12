@@ -418,6 +418,8 @@ const Explore = (props) => {
     setOpen(true);
   };
 
+  window.scroll(0,0);
+  
   const verifyHandler = async (enroll) => {
     let bodydata = {
       "enrollment": enroll,
