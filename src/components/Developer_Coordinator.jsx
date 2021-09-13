@@ -66,7 +66,7 @@ const Developer_Coordinator = () => {
 						<CoordinatorCard name="Varun Bhuva" LinkedIn="https://www.linkedin.com/in/bhuva-varun-ba402a20b/" designation="Coordinator" year="4th Year-Div1" ImgSrc={Varun}/>
 						<CoordinatorCard name="Divyaraj Thakaria" LinkedIn="https://www.linkedin.com/in/divyaraj-thakaria/" designation="Coordinator" year="4th Year-Div1" ImgSrc={Divyaraj}/>
 						<CoordinatorCard name="Nency Badiyani" LinkedIn="https://www.linkedin.com/in/nency-badiyani/" designation="Coordinator" year="4th Year-Div2" ImgSrc={Nency}/>
-						<CoordinatorCard name="Abhi Patel" LinkedIn="" designation="Coordinator" year="3rd Year-Div1" ImgSrc={Abhi}/>
+						<CoordinatorCard name="Abhi Patel" LinkedIn="https://instagram.com/i_m_abhipatel?utm_medium=copy_link" designation="Coordinator" year="3rd Year-Div1" ImgSrc={Abhi}/>
 					</div>
 					<div className="mx-auto my-3 " style={{ color: "white", textAlign: "center" }}>
 						<p className="title" style={{ margin: "30px 0px 20px 12px",fontSize:"40px"}}>Faculty Coordinators</p>
