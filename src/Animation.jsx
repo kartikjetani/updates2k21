@@ -1,7 +1,7 @@
 import React from 'react'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
-import Update from "./poster/UpdatePoster.png";
+import Update from "./poster/UpdatePoster.jpeg";
 import Update2 from "./poster/UpdatePoster2.png"
 
 const Animation = () => {
