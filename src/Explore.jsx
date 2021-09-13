@@ -542,6 +542,7 @@ const Explore = (props) => {
               <DialogTitle id="alert-dialog-title">{"Confirm Your Registration"}</DialogTitle>
               <DialogContent>
                 {/* Alert message */}
+                Enter other member's enrollment no. Not yours.
                 <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "17rem" }} >
                   {success && <Alert severity="success">{alertmsg}</Alert>}
                   {alert && <Alert severity="error">{alertmsg}</Alert>}
