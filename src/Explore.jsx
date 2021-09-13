@@ -538,7 +538,7 @@ const Explore = (props) => {
             <p>Event Name : {data.Eventname}</p>
             <p>Time : {data.Eventtime}</p>
             <p>Venue : {data.Eventvanue}</p>
-            <Button onClick={handleClickOpen} style={{ color: "white", backgroundColor: "blue" }}>Register</Button>
+            <Button onClick={handleClickOpen}  style={{ color: "white", backgroundColor: "blue" }}>Register</Button>
             <Dialog
               open={open}
               onClose={handleClose}
@@ -596,27 +596,27 @@ const Explore = (props) => {
         </div>
         <div className="col-sm-12 col-md-8 text-left" >
           <div style={{ color: "white", textAlign: "left" }}>
-            <p ><span style={{ color: "#f17c03" }} className="title">Event Name:</span> {data.Eventname}</p>
-            <p><span style={{ color: "#f17c03" }} className="title">Tagline:</span>“{data.Tagline}”
+            <p ><span style={{ color: "#22d5de", fontSize:"18px" }} className="title">Event Name: </span> <span className="desc">{data.Eventname}</span></p>
+            <p><span style={{ color: "#22d5de" }} className="title">Tagline: </span> <span className="desc">“{data.Tagline}”</span>
             </p>
             {data.Description.map((val) => {
               return (
-                <p>{val}</p>
+                <p className="desc">{val}</p>
               )
             }
             )}
             <p>
-              <span style={{ color: "#f17c03" }} className="title"> Student Co-Ordinators:</span><br />
+              <span style={{ color: "#22d5de" }} className="title"> Student Co-Ordinators:</span><br />
               {data.Student_CoOrdinators.map((val) => {
                 return (
-                  <p>{val}</p>
+                  <p className="desc">{val}</p>
                 )
               })}</p>
             <p>
-              <span style={{ color: "#f17c03" }} className="title">Faculty Co-Ordinators:</span><br />
+              <span style={{ color: "#22d5de" }} className="title">Faculty Co-Ordinators:</span><br />
               {data.Faculty_CoOrdinators.map((val) => {
                 return (
-                  <p>{val}</p>
+                  <p className="desc">{val}</p>
                 )
               })}</p>
           </div>

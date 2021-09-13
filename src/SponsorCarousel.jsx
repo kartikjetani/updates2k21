@@ -46,7 +46,7 @@ export default function SponsorCarousel() {
     return (
         <>
 		<div className="mx-auto my-3" style={{ color: "white", textAlign: "center" }}>
-						<p style={{ margin: "12px 0px 4px 12px",fontSize:"20px"}} className="title">Sponsors</p>
+						<p style={{ margin: "20px 0px 20px 12px",fontSize:"40px"}} className="title">Sponsors</p>
 					</div>
 <section class="homeSlider" id="scrolling"> 
 	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
