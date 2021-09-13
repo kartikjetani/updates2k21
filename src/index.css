@@ -7,13 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./poster/background.jpeg");
+  background-image: url("./poster/background.png");
   background-repeat: no-repeat;
 background-size: cover;
   background-attachment: fixed;
 }
-
-
 
 .title{
   font-family: 'Open Sans', sans-serif
