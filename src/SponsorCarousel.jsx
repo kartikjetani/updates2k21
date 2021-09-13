@@ -6,6 +6,7 @@ import Sponser4 from "./poster/sponser4.png";
 import Sponser5 from "./poster/sponser5.png";
 import Sponser6 from "./poster/sponser6.png";
 import Sponser7 from "./poster/sponser7.png";
+import Sponser8 from "./poster/Sponser8.png";
 
 
 
@@ -88,6 +89,11 @@ export default function SponsorCarousel() {
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
 				<img src={Sponser7} alt="Event" className="img-fluid"/>
+				</div>
+			</div>
+			<div className="carousel-item">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser8} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 		</div>

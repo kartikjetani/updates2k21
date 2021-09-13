@@ -117,7 +117,7 @@ export default function SignUp() {
             "personalid": pmail
         }
 
-            var response = await fetch("http://localhost:5000/signup", {
+            var response = await fetch("https://updates2k21-node.herokuapp.com/signup", {
                 method: "POST",
                 headers: {
                     'Accept': '*/*',

@@ -82,7 +82,7 @@ export default function Login() {
         }
 
         try {
-            var response = await fetch("http://localhost:5000/login", {
+            var response = await fetch("https://updates2k21-node.herokuapp.com/login", {
                 method: "POST",
                 headers: {
                     'Accept': '*/*',

@@ -190,7 +190,7 @@ const event_list = {
       "• Presentation must be created by participants only.",
       "• Presentation should be maximum of 15 minutes.",
     ],
-    ImgSrc: "https://i.ibb.co/dcJJ7SK/Avishkar-final-1.jpg",
+    ImgSrc: "https://i.ibb.co/XksSB4f/Avishkar-final-3.jpg",
     Student_CoOrdinators: ["Priyank Harjilawala (7698254795)",
       "Sneh Patel (9409070709)",
       "Manav Dobariya (9409583829)",
@@ -254,8 +254,8 @@ const event_list = {
       "Number of rounds: 2",
       "Round 1: (Approx. 1 hour)",
       "In the first round, participants have to solve the logical reasoning and C programming questions. Some questions can be in an encrypted format or given in the form of a puzzle. This will be score-based qualifier round. The participants having maximum correct answers in minimum time will be qualified for the second round.",
-       "Round 2: (Approx. 1 hour 15 minutes)",
-       "At the beginning of the round, the participants will be given a story and an input which’ll be used in the story. The given input is used to get answers regarding the mystery. Using the clues, the participant will be able to get to the final answer.",
+      "Round 2: (Approx. 1 hour 15 minutes)",
+      "At the beginning of the round, the participants will be given a story and an input which’ll be used in the story. The given input is used to get answers regarding the mystery. Using the clues, the participant will be able to get to the final answer.",
       "Rules: ",
       "1) Each participant can submit the form once only.",
       "2) Top entries with maximum score will be qualified for the second round.",
@@ -284,7 +284,7 @@ const event_list = {
       "Rules: ",
       "• Quiz will be given by participants through google form in Computer Lab.",
       "• No online searching activities will be allowed during quiz round.",
-      "• Around 50 questions will be asked. • In case of same score(tie), time factor will be considered.",
+      "• Around 40 questions will be asked. • In case of same score(tie), time factor will be considered.",
       "Round 2: Group Discussion Round",
       "• Topics of group discussion will be provided after 1st round to all students who are selected in 2nd round. • One topic will be provided to each group from formerly given topics.",
       "• Participants will be short listed for interview session based on the performance of 1st and 2nd round.",
@@ -296,7 +296,7 @@ const event_list = {
       "Rules: ",
       "• For this round, selected participants need to appear with resume.",
     ],
-    ImgSrc: "",
+    ImgSrc: "https://i.ibb.co/0sVvSk2/Niyukti-final.png",
     Student_CoOrdinators: [
       "Meet Savaj (8758287026)",
       "Jayesh Maiyani (8200201690)",
@@ -421,14 +421,14 @@ const Explore = (props) => {
 
   }, [alert, success])
 
-  window.scroll(0,0);
+  window.scroll(0, 0);
 
   const handleClickOpen = () => {
     setOpen(true);
     if (EventName === "Valorant") {
       window.open("https://forms.gle/TBsDTaywqSUe6MjeA")
       setOpen(false);
-    }else if (EventName === "Zodiac") {
+    } else if (EventName === "Zodiac") {
       window.open("https://docs.google.com/forms/d/e/1FAIpQLSfBkKkfatLxHFaMKTvwGhiyrv1Ypr9cnvgfMGYv0T2cIyvdjg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link")
       setOpen(false);
     }
@@ -441,7 +441,7 @@ const Explore = (props) => {
       "eventname": EventName
     }
 
-    var response = await fetch("http://localhost:5000/enrollment-exist", {
+    var response = await fetch("https://updates2k21-node.herokuapp.com/enrollment-exist", {
       method: "POST",
       headers: {
         'Accept': '*/*',
@@ -467,7 +467,7 @@ const Explore = (props) => {
 
   }
   const handleSubmit = async () => {
-    if (sessionStorage.getItem("token") === "" || sessionStorage.getItem("token")===null) {
+    if (sessionStorage.getItem("token") === "" || sessionStorage.getItem("token") === null) {
       setAlert(true);
       setAlertmsg("Please login to register.");
       return;
@@ -488,7 +488,7 @@ const Explore = (props) => {
     }
     console.log("bodydata", bodydata);
 
-    var response = await fetch("http://localhost:5000/event-register", {
+    var response = await fetch("https://updates2k21-node.herokuapp.com/event-register", {
       method: "POST",
       headers: {
         'Accept': '*/*',
@@ -510,10 +510,9 @@ const Explore = (props) => {
     } else if (response.message === "SUCCESS") {
       setSuccess(true);
       setAlertmsg(response.desc)
-      setOpen(false);
       setTimeout(() => {
-        setSuccess(false)
-      }, 10000);
+          setOpen(false);
+      }, 5000);
     } else if (response.message === "ALREADY_REGISTERED") {
       setAlert(true);
       setAlertmsg(response.desc);
@@ -531,6 +530,7 @@ const Explore = (props) => {
   return (
     <>
       <Navbar />
+
       <div className="row mx-auto">
         <div className="col-sm-12 col-md-4">
           <img className="my-4 mx-auto" src={data.ImgSrc} style={{ width: "100%" }} alt="" />
@@ -538,7 +538,7 @@ const Explore = (props) => {
             <p>Event Name : {data.Eventname}</p>
             <p>Time : {data.Eventtime}</p>
             <p>Venue : {data.Eventvanue}</p>
-            <Button onClick={handleClickOpen}  style={{ color: "white", backgroundColor: "blue" }}>Register</Button>
+            <Button onClick={handleClickOpen} style={{ color: "white", backgroundColor: "blue" }}>Register</Button>
             <Dialog
               open={open}
               onClose={handleClose}
@@ -596,7 +596,7 @@ const Explore = (props) => {
         </div>
         <div className="col-sm-12 col-md-8 text-left" >
           <div style={{ color: "white", textAlign: "left" }}>
-            <p ><span style={{ color: "#22d5de", fontSize:"18px" }} className="title">Event Name: </span> <span className="desc">{data.Eventname}</span></p>
+            <p ><span style={{ color: "#22d5de", fontSize: "18px" }} className="title">Event Name: </span> <span className="desc">{data.Eventname}</span></p>
             <p><span style={{ color: "#22d5de" }} className="title">Tagline: </span> <span className="desc">“{data.Tagline}”</span>
             </p>
             {data.Description.map((val) => {
