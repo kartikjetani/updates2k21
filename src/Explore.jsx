@@ -418,6 +418,7 @@ const Explore = (props) => {
 
   }, [alert, success])
 
+  window.scroll(0,0);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -503,6 +504,7 @@ const Explore = (props) => {
     } else if (response.message === "SUCCESS") {
       setSuccess(true);
       setAlertmsg(response.desc)
+      setOpen(false);
       setTimeout(() => {
         setSuccess(false)
       }, 10000);
@@ -511,7 +513,8 @@ const Explore = (props) => {
       setAlertmsg(response.desc);
     }
     console.log(response);
-    console.log("submitted")
+    console.log("submitted");
+
   }
 
   const handleClose = () => {
@@ -539,7 +542,7 @@ const Explore = (props) => {
               <DialogTitle id="alert-dialog-title">{"Confirm Your Registration"}</DialogTitle>
               <DialogContent>
                 {/* Alert message */}
-                <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "30vw" }} >
+                <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "17rem" }} >
                   {success && <Alert severity="success">{alertmsg}</Alert>}
                   {alert && <Alert severity="error">{alertmsg}</Alert>}
                 </div>

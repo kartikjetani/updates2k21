@@ -22,10 +22,10 @@ export default function SponsorCarousel() {
 		{
 			if(images[i].classList.contains("active")){
 				images[i].classList.remove("active");
-				if(i > 0){
-					images[(i-1)].classList.add("active")
-				}else{
+				if(i === 0){
 					images[images.length].classList.add("active")
+				}else{
+					images[(i-1)].classList.add("active")
 				}
 				break;
 			}

@@ -101,7 +101,7 @@ export default function Login() {
                 setTimeout(() => {
                     setSuccess(false)
                 }, 3000);
-                history.goBack();
+                history.push("/");
             } else if (response.message === "INVALID_PASSWORD") {
                 setAlert(true);
                 setAlertmsg("Invalid password")
@@ -121,7 +121,7 @@ export default function Login() {
 
     return (
         <Container component="main" maxWidth="xs" style={{ backgroundColor: "white", borderRadius: "10px" }}>
-            <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "30vw" }} >
+            <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "20rem" }} >
                 {alert && <Alert severity="error">{alertmsg}</Alert>}
                 {success && <Alert severity="success">{alertmsg}</Alert>}
             </div>
