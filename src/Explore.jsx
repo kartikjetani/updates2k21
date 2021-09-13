@@ -228,6 +228,7 @@ const event_list = {
       "2) Top entries with maximum score will be qualified for the second round.",
       "3) The entries that will be qualified for the second round will be contacted.",
       "4) Both the rounds will be conducted separately.",
+      "5) In round 2 participants have to use their own machines/devices",
     ],
     ImgSrc: "https://i.ibb.co/G0HZ80S/Predictaholic-final.png",
     Student_CoOrdinators: [
@@ -252,7 +253,9 @@ const event_list = {
       "Number of members: 1 or 2",
       "Number of rounds: 2",
       "Round 1: (Approx. 1 hour)",
-      "In the first round, participants have to solve the logical reasoning and C programming questions. Some questions can be in an encrypted format or given in the form of a puzzle. This will be score-based qualifier round. The participants having maximum correct answers in minimum time will be qualified for the second round. Round 2: (Approx. 1 hour 15 minutes) At the beginning of the round, the participants will be given a story and an input which’ll be used in the story. The given input is used to get answers regarding the mystery. Using the clues, the participant will be able to get to the final answer.",
+      "In the first round, participants have to solve the logical reasoning and C programming questions. Some questions can be in an encrypted format or given in the form of a puzzle. This will be score-based qualifier round. The participants having maximum correct answers in minimum time will be qualified for the second round.",
+       "Round 2: (Approx. 1 hour 15 minutes)",
+       "At the beginning of the round, the participants will be given a story and an input which’ll be used in the story. The given input is used to get answers regarding the mystery. Using the clues, the participant will be able to get to the final answer.",
       "Rules: ",
       "1) Each participant can submit the form once only.",
       "2) Top entries with maximum score will be qualified for the second round.",

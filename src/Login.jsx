@@ -149,6 +149,7 @@ export default function Login() {
                         <Grid item xs={12}>
                             <TextField
                                 variant="outlined"
+                                type="password"
                                 required
                                 fullWidth
                                 name="password"

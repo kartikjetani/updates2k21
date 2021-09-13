@@ -1,9 +1,9 @@
 import React from 'react';
 import Sponser1 from "./poster/sponser1.png";
 import Sponser2 from "./poster/sponser2.png";
-import Sponser3 from "./poster/sponser3.jpeg";
-import Sponser4 from "./poster/sponser4.jpeg";
-import Sponser5 from "./poster/sponser5.jpeg";
+import Sponser3 from "./poster/sponser3.png";
+import Sponser4 from "./poster/sponser4.png";
+import Sponser5 from "./poster/sponser5.png";
 
 
 export default function SponsorCarousel() {
