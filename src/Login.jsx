@@ -177,6 +177,13 @@ export default function Login() {
                             </NavLink>
                         </Grid>
                     </Grid>
+                    <Grid className="my-3" container justifyContent="flex-end">
+                        <Grid item>
+                            <NavLink to="/Contact" variant="body2">
+                                In Trouble? Then Contact Us 
+                            </NavLink>
+                        </Grid>
+                    </Grid>
                 </form>
             </div>
             <Box mt={5}>

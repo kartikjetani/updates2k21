@@ -4,6 +4,7 @@ import Home from "./Home";
 import Explore from "./Explore";
 import SignUp from "./Signup";
 import Login from "./Login";
+import Contact from "./Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/Contact" component={Contact} />
         <Route exact path="/Valorant" component={Explore} />
         <Route exact path="/BidWiser" component={Explore} />
         <Route exact path="/BingeWatch" component={Explore} />

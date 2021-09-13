@@ -4,7 +4,6 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { NavLink } from 'react-router-dom';
 import Logo from "./poster/UpdatesLogo.png";
-import AndroidIcon from '@material-ui/icons/Android';
 
 const useStyles = makeStyles((theme) => ({
   root: {
