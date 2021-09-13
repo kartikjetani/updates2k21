@@ -590,8 +590,8 @@ const Explore = (props) => {
         </div>
         <div className="col-sm-12 col-md-8 text-left" >
           <div style={{ color: "white", textAlign: "left" }}>
-            <p ><span style={{ color: "red" }}>Event Name:</span> {data.Eventname}</p>
-            <p><span style={{ color: "red" }}>Tagline:</span>“{data.Tagline}”
+            <p ><span style={{ color: "#f17c03" }} className="title">Event Name:</span> {data.Eventname}</p>
+            <p><span style={{ color: "#f17c03" }} className="title">Tagline:</span>“{data.Tagline}”
             </p>
             {data.Description.map((val) => {
               return (
@@ -600,14 +600,14 @@ const Explore = (props) => {
             }
             )}
             <p>
-              <span style={{ color: "red" }}> Student Co-Ordinators:</span><br />
+              <span style={{ color: "#f17c03" }} className="title"> Student Co-Ordinators:</span><br />
               {data.Student_CoOrdinators.map((val) => {
                 return (
                   <p>{val}</p>
                 )
               })}</p>
             <p>
-              <span style={{ color: "red" }}>Faculty Co-Ordinators:</span><br />
+              <span style={{ color: "#f17c03" }} className="title">Faculty Co-Ordinators:</span><br />
               {data.Faculty_CoOrdinators.map((val) => {
                 return (
                   <p>{val}</p>

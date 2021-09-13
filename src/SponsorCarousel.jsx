@@ -1,7 +1,10 @@
 import React from 'react';
-import Sponser1 from "./poster/sponser1.jpeg";
-import Sponser2 from "./poster/sponser2.jpeg";
-import Sponser3 from "./poster/sponser3.png";
+import Sponser1 from "./poster/sponser1.png";
+import Sponser2 from "./poster/sponser2.png";
+import Sponser3 from "./poster/sponser3.jpeg";
+import Sponser4 from "./poster/sponser4.jpeg";
+import Sponser5 from "./poster/sponser5.jpeg";
+
 
 export default function SponsorCarousel() {
 	const Handlenext = () =>{
@@ -32,11 +35,14 @@ export default function SponsorCarousel() {
 		}
 	}
 
+	React.useEffect(() => {
+		
 	setInterval(
 		function(){
 			Handlenext()
 		},3000)
     
+	},[])
     return (
         <>
 		<div className="mx-auto my-3" style={{ color: "white", textAlign: "center" }}>
@@ -47,7 +53,7 @@ export default function SponsorCarousel() {
 		<div class="carousel-inner">
 			<div class="carousel-item active" id="card1">
 				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser3} alt="Event" class="img-fluid"/>
+				<img src={Sponser1} alt="Event" class="img-fluid"/>
 				</div>
 			</div>
 			<div class="carousel-item" id="card2">
@@ -57,7 +63,17 @@ export default function SponsorCarousel() {
 			</div>
 			<div class="carousel-item">
 				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser1} alt="Event" class="img-fluid"/>
+				<img src={Sponser3} alt="Event" class="img-fluid"/>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser4} alt="Event" class="img-fluid"/>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser5} alt="Event" class="img-fluid"/>
 				</div>
 			</div>
 		</div>
