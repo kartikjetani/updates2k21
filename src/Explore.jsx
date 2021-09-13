@@ -428,6 +428,9 @@ const Explore = (props) => {
     if (EventName === "Valorant") {
       window.open("https://forms.gle/TBsDTaywqSUe6MjeA")
       setOpen(false);
+    }else if (EventName === "Zodiac") {
+      window.open("https://docs.google.com/forms/d/e/1FAIpQLSfBkKkfatLxHFaMKTvwGhiyrv1Ypr9cnvgfMGYv0T2cIyvdjg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link")
+      setOpen(false);
     }
   };
 
