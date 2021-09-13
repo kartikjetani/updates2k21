@@ -467,7 +467,7 @@ const Explore = (props) => {
 
   }
   const handleSubmit = async () => {
-    if (sessionStorage.getItem("token") === "") {
+    if (sessionStorage.getItem("token") === "" || sessionStorage.getItem("token")===null) {
       setAlert(true);
       setAlertmsg("Please login to register.");
       return;

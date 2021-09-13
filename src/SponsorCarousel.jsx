@@ -46,55 +46,56 @@ export default function SponsorCarousel() {
 		},3000)
     
 	},[])
+
     return (
         <>
 		<div className="mx-auto my-3" style={{ color: "white", textAlign: "center" }}>
 						<p style={{ margin: "20px 0px 20px 12px",fontSize:"40px"}} className="title">Sponsors</p>
-					</div>
-<section class="homeSlider" id="scrolling"> 
-	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active" id="card1">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser1} alt="Event" class="img-fluid"/>
+		</div>
+		<section className="homeSlider" id="scrolling"> 
+	<div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+		<div className="carousel-inner">
+			<div className="carousel-item active" id="card1">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser1} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
-			<div class="carousel-item" id="card2">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser2} alt="Event" class="img-fluid"/>
+			<div className="carousel-item" id="card2">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser2} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser3} alt="Event" class="img-fluid"/>
+			<div className="carousel-item">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser3} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser4} alt="Event" class="img-fluid"/>
+			<div className="carousel-item">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser4} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser5} alt="Event" class="img-fluid"/>
+			<div className="carousel-item">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser5} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser6} alt="Event" class="img-fluid"/>
+			<div className="carousel-item">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser6} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser7} alt="Event" class="img-fluid"/>
+			<div className="carousel-item">
+				<div className="carousel-caption d-sm-none d-md-block">
+				<img src={Sponser7} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 		</div>
-		<button onClick={Handleprev} class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<button onClick={Handleprev} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			<span className="carousel-control-prev-icon" aria-hidden="true"></span>
 		</button>
-		<button onClick={Handlenext} class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<button onClick={Handlenext} className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			<span className="carousel-control-next-icon" aria-hidden="true"></span>
 		</button>
 	</div>
 </section>
