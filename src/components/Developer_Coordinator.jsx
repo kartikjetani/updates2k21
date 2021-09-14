@@ -18,8 +18,7 @@ const CoordinatorCard = (props) => {
 					<a href={props.LinkedIn}><img src={props.ImgSrc} class="leader-image" alt="" /></a>
 				</center>
 				<center>
-					<h3 style={{ color: "white" }} class="mt-3">{props.name}</h3>
-					<h5 style={{ color: "white" }}>{props.designation}</h5>
+					<h3 style={{ color: "white", }} class="mt-3">{props.name}</h3>
 					<h5 style={{ color: "white" }}>{props.year}</h5>
 				</center>
 			</div>
@@ -72,9 +71,9 @@ const Developer_Coordinator = () => {
 						<p className="title" style={{ margin: "30px 0px 20px 12px",fontSize:"40px"}}>Faculty Coordinators</p>
 					</div>
 					<div class="row mx-auto">
-						<DeveloperCard name="Jayesh Chaudhary" LinkedIn="https://www.linkedin.com/in/jayeshgchaudhary/" ImgSrc={Jayesh}/>
-						<DeveloperCard name="Bhavesh Patel" LinkedIn="https://www.linkedin.com/in/bhavesh-patel-0a528949/" ImgSrc={Bhavesh}/>
-						<DeveloperCard name="Jaydeep Barad" LinkedIn="https://www.linkedin.com/in/jaydeep-barad-03b2115a/" ImgSrc={Jaydeep}/>
+						<DeveloperCard name="Prof. Jayesh Chaudhary" LinkedIn="https://www.linkedin.com/in/jayeshgchaudhary/" ImgSrc={Jayesh}/>
+						<DeveloperCard name="Prof. Bhavesh Patel" LinkedIn="https://www.linkedin.com/in/bhavesh-patel-0a528949/" ImgSrc={Bhavesh}/>
+						<DeveloperCard name="Prof. Jaydeep Barad" LinkedIn="https://www.linkedin.com/in/jaydeep-barad-03b2115a/" ImgSrc={Jaydeep}/>
 					</div>
 				</div>
 			</section>

@@ -146,255 +146,258 @@ const event_list = {
     Eventvanue: "",
     Tagline: "Debate: Gladiatorial Combat of the Intellect.",
     Description: [
-      "Rules",
-      " 1. In 1st round, there will be a quiz of 20 questions with 4 multiple choices in which you have to choose correct one. There will be no negative marking. Quiz will be based on logical reasoning, current affairs and general knowledge. 5-7 Teams which will gain the highest score will be selected for the next round. ( 2 members for each team)",
-      " 2. 2nd round is the debate round that is semi final round in which the team has to prepare on topics given and they will have to speak for the topic within 2-3 min. According to the selection criteria jury will select the top 2 teams for the 3rd round.",
-      " 3. Third round will a presentation round.Two teams will be selected from the debate(by the jury based on their scores) and will be given a time of 15-20 mins before the final round to prepare the presentation. ",
-      " 4. Winner of ABHIVYAKTI will be selected on the basis of criteria like speech,explanation power and many more. ",
-      " 5. Equal participation of students will be required in a team.",
+      "Round 1:", 
+      "It will be a debate round where teams will take part in debate for the given topics.The jury will judge the participants based on their performance in the debate and the selected teams will compete each other in the final round.", 
+      "Round 2:", 
+      "The final round :The presentation Round:Selected teams will have to give presentation on the given topics by Jury.",  
+      "Rules:",
+      "Time for preparation of presentation and speech will be given to the selected teams.",
+      "Topics for the presentation will be given on spot by the jury. ",
+      " Winner of ABHIVYAKTI will be selected on the basis of criteria like speech,explanation power and many more. ",
+      "  Equal participation of students will be required in a team.",    
       "Debate Topics:",
-      "1)What’s better: traditional or online education? ",
-      "2)LI-FI vs WI-FI ",
-      "3)Will AI kill jobs? ",
-      "4)Is India ready for cashless economy?",
-      "5)Will cryptocurrency survive?",
-      "6)Should web surfing be restricted at work?",
-      "7)Is leisure time essential for workplace?",
+    "1)What’s better: traditional or online education? ",
+    "2)LI-FI vs WI-FI ",
+    "3)Will AI kill jobs? ",
+    "4)Is India ready for cashless economy?",
+    "5)Will cryptocurrency survive?",
+    "6)Should web surfing be restricted at work?",
+    "7)Is leisure time essential for workplace?",
     ],
-    ImgSrc: "https://i.ibb.co/7Vqz5FB/Abhivyakti-final.png",
-    Student_CoOrdinators: [
-      "JASH SHAH-CO(M)- 3rd",
-      "PALAK DESAI -CO(M) - 3rd",
-      "RADHU PATEL -CO(E) - 3rd",
-      "VISHESH PATEL-CO(E) - 3rd"
-    ],
+ImgSrc: "https://i.ibb.co/7Vqz5FB/Abhivyakti-final.png",
+  Student_CoOrdinators: [
+    "JASH SHAH-CO(M)- 3rd",
+    "PALAK DESAI -CO(M) - 3rd",
+    "RADHU PATEL -CO(E) - 3rd",
+    "VISHESH PATEL-CO(E) - 3rd"
+  ],
     Faculty_CoOrdinators: ["Prof. VANDANA JOSHI",
       "Prof. URVASHI PRAJAPATI"]
   },
-  Avishkar: {
-    Eventname: "Avishkar",
+Avishkar: {
+  Eventname: "Avishkar",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "Creativity is thinking up new things. Innovation is doing new things.",
-    Description: [
-      "Participation Mode:",
-      "Individual/Team(Maximum 3 members) ",
-      "Description: ",
-      "This event is related to innovative/business/start-up ideas. This event contains two rounds. ",
-      "Round 1:",
-      "Participants have to submit an abstract of their idea. Judges will select some of the best ideas. These selected participants will move to second round. ",
-      "Round 2:",
-      "Participants have to give presentation of their idea to the judges. After presentation questionary of 5 minutes will be done by judges. Top two ideas will be declared as winners. ",
-      "Rules: ",
-      "• Abstract should be of 250-300 words. ",
-      "• Presentation must be created by participants only.",
-      "• Presentation should be maximum of 15 minutes.",
-    ],
-    ImgSrc: "https://i.ibb.co/XksSB4f/Avishkar-final-3.jpg",
-    Student_CoOrdinators: ["Priyank Harjilawala (7698254795)",
-      "Sneh Patel (9409070709)",
-      "Manav Dobariya (9409583829)",
-      "Brijesh Patodiya (9974884446)"],
-    Faculty_CoOrdinators: [
-      "Prof. Bhumika Bhatt",
-      "Prof. Nitya Komalan "
-    ]
-  },
-  Predictaholic: {
-    Eventname: "Predictaholic",
+      Eventvanue: "",
+        Tagline: "Creativity is thinking up new things. Innovation is doing new things.",
+          Description: [
+            "Participation Mode:",
+            "Individual/Team(Maximum 3 members) ",
+            "Description: ",
+            "This event is related to innovative/business/start-up ideas. This event contains two rounds. ",
+            "Round 1:",
+            "Participants have to submit an abstract of their idea. Judges will select some of the best ideas. These selected participants will move to second round. ",
+            "Round 2:",
+            "Participants have to give presentation of their idea to the judges. After presentation questionary of 5 minutes will be done by judges. Top two ideas will be declared as winners. ",
+            "Rules: ",
+            "• Abstract should be of 250-300 words. ",
+            "• Presentation must be created by participants only.",
+            "• Presentation should be maximum of 15 minutes.",
+          ],
+            ImgSrc: "https://i.ibb.co/XksSB4f/Avishkar-final-3.jpg",
+              Student_CoOrdinators: ["Priyank Harjilawala (7698254795)",
+                "Sneh Patel (9409070709)",
+                "Manav Dobariya (9409583829)",
+                "Brijesh Patodiya (9974884446)"],
+                Faculty_CoOrdinators: [
+                  "Prof. Bhumika Bhatt",
+                  "Prof. Nitya Komalan "
+                ]
+},
+Predictaholic: {
+  Eventname: "Predictaholic",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "Foresee The Inevitable",
-    Description: [
-      "Event Description:",
-      "An event where you will be predicting the cricket score.",
-      "Number of members:",
-      "2",
-      "Number of rounds:",
-      "2",
-      "Round 1:",
-      "• Basic Mathematics and Data science based generic quiz  will be conducted.",
-      "• This will be score-based qualifier round.",
-      "Round 2: ",
-      "• Datasets related to cricket will be given before commencement of round 2.",
-      "• Each team has to submit the code, along with the score predicted by the code.",
-      "• The participant should submit the code through platform given. More details will be shared with registered/qualified participants.",
-      "• The winning team will depend on how close the score predicted by the code and accuracy matches the actual score.",
-      "• Only Libraries specified are preferred to be used, for fair competition. Information regarding same will be provided later.",
-      "• Code should be in Python language.",
-      "• If you are a keen follower of cricket and have a fair understanding of the game but are not a programmer or a data scientist, we have something for you too! Predict the score using your own mathematical/basic techniques.Although you will not be considered for winner prize if prediction is not  done through any code/model, but definitely you will get the winning certificate.",
-      "Rules:",
-      "1) Each participant can submit the form once only.",
-      "2) Top entries with maximum score will be qualified for the second round.",
-      "3) The entries that will be qualified for the second round will be contacted.",
-      "4) Both the rounds will be conducted separately.",
-      "5) In round 2 participants have to use their own machines/devices",
-    ],
-    ImgSrc: "https://i.ibb.co/G0HZ80S/Predictaholic-final.png",
-    Student_CoOrdinators: [
-      "Jainil Jakasaniya (CO-E III)",
-      "Abhishek Akbari (CO-E III)",
-      "Manali Ladhani (CO-E IV)",
-      "Jayanshu kikani (CO-M III)",
-    ],
-    Faculty_CoOrdinators: [
-      "Prof. Nirali Nanavati",
-      "Prof. Rachna Oza"
-    ]
-  },
-  Zodiac: {
-    Eventname: "The Enigma",
+      Eventvanue: "",
+        Tagline: "Foresee The Inevitable",
+          Description: [
+            "Event Description:",
+            "An event where you will be predicting the cricket score.",
+            "Number of members:",
+            "2",
+            "Number of rounds:",
+            "2",
+            "Round 1:",
+            "• Basic Mathematics and Data science based generic quiz  will be conducted.",
+            "• This will be score-based qualifier round.",
+            "Round 2: ",
+            "• Datasets related to cricket will be given before commencement of round 2.",
+            "• Each team has to submit the code, along with the score predicted by the code.",
+            "• The participant should submit the code through platform given. More details will be shared with registered/qualified participants.",
+            "• The winning team will depend on how close the score predicted by the code and accuracy matches the actual score.",
+            "• Only Libraries specified are preferred to be used, for fair competition. Information regarding same will be provided later.",
+            "• Code should be in Python language.",
+            "• If you are a keen follower of cricket and have a fair understanding of the game but are not a programmer or a data scientist, we have something for you too! Predict the score using your own mathematical/basic techniques.Although you will not be considered for winner prize if prediction is not  done through any code/model, but definitely you will get the winning certificate.",
+            "Rules:",
+            "1) Each participant can submit the form once only.",
+            "2) Top entries with maximum score will be qualified for the second round.",
+            "3) The entries that will be qualified for the second round will be contacted.",
+            "4) Both the rounds will be conducted separately.",
+            "5) In round 2 participants have to use their own machines/devices",
+          ],
+            ImgSrc: "https://i.ibb.co/G0HZ80S/Predictaholic-final.png",
+              Student_CoOrdinators: [
+                "Jainil Jakasaniya (CO-E III)",
+                "Abhishek Akbari (CO-E III)",
+                "Manali Ladhani (CO-E IV)",
+                "Jayanshu kikani (CO-M III)",
+              ],
+                Faculty_CoOrdinators: [
+                  "Prof. Nirali Nanavati",
+                  "Prof. Rachna Oza"
+                ]
+},
+Zodiac: {
+  Eventname: "The Enigma",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "Unveil The Turing In You",
-    Description: [
-      "Event Description:",
-      "An event where you will be given mysteries which you need to decode.",
-      "Number of members: 1 or 2",
-      "Number of rounds: 2",
-      "Round 1: (Approx. 1 hour)",
-      "In the first round, participants have to solve the logical reasoning and C programming questions. Some questions can be in an encrypted format or given in the form of a puzzle. This will be score-based qualifier round. The participants having maximum correct answers in minimum time will be qualified for the second round.",
-      "Round 2: (Approx. 1 hour 15 minutes)",
-      "At the beginning of the round, the participants will be given a story and an input which’ll be used in the story. The given input is used to get answers regarding the mystery. Using the clues, the participant will be able to get to the final answer.",
-      "Rules: ",
-      "1) Each participant can submit the form once only.",
-      "2) Top entries with maximum score will be qualified for the second round.",
-      "3) The entries that will be qualified for the second round will be contacted.",
-      "4) Both the rounds will be conducted separately.",
-    ],
-    ImgSrc: "https://i.ibb.co/GWPrhzw/The-Enigma.png",
-    Student_CoOrdinators: [
-      "Faizan Mombasawala (CO-M IV)",
-      "Harshil Modi(CO-M IV)",
-      "Love Borad (CO-E III)",
-      "Romit Patel (CO-E III)",
-      "Rini Patel (CO-E III)"
-    ],
-    Faculty_CoOrdinators: ["Prof. Bintu Kadhiwala"]
-  },
-  Niyukti: {
-    Eventname: "Niyukti",
+      Eventvanue: "",
+        Tagline: "Unveil The Turing In You",
+          Description: [
+            "Event Description:",
+            "An event where you will be given mysteries which you need to decode.",
+            "Number of members: 1 or 2",
+            "Number of rounds: 2",
+            "Round 1: (Approx. 1 hour)",
+            "In the first round, participants have to solve the logical reasoning and C programming questions. Some questions can be in an encrypted format or given in the form of a puzzle. This will be score-based qualifier round. The participants having maximum correct answers in minimum time will be qualified for the second round.",
+            "Round 2: (Approx. 1 hour 15 minutes)",
+            "At the beginning of the round, the participants will be given a story and an input which’ll be used in the story. The given input is used to get answers regarding the mystery. Using the clues, the participant will be able to get to the final answer.",
+            "Rules: ",
+            "1) Each participant can submit the form once only.",
+            "2) Top entries with maximum score will be qualified for the second round.",
+            "3) The entries that will be qualified for the second round will be contacted.",
+            "4) Both the rounds will be conducted separately.",
+          ],
+            ImgSrc: "https://i.ibb.co/GWPrhzw/The-Enigma.png",
+              Student_CoOrdinators: [
+                "Faizan Mombasawala (CO-M IV)",
+                "Harshil Modi(CO-M IV)",
+                "Love Borad (CO-E III)",
+                "Romit Patel (CO-E III)",
+                "Rini Patel (CO-E III)"
+              ],
+                Faculty_CoOrdinators: ["Prof. Bintu Kadhiwala"]
+},
+Niyukti: {
+  Eventname: "Niyukti",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "Reach the sky or don’t even try",
-    Description: [
-      "It consists of THREE ROUNDS:",
-      "Round 1: Quiz based Round",
-      "• Quiz Topics = Quantitative Aptitude, Logical Reasoning, Verbal Ability.",
-      "Rules: ",
-      "• Quiz will be given by participants through google form in Computer Lab.",
-      "• No online searching activities will be allowed during quiz round.",
-      "• Around 40 questions will be asked. • In case of same score(tie), time factor will be considered.",
-      "Round 2: Group Discussion Round",
-      "• Topics of group discussion will be provided after 1st round to all students who are selected in 2nd round. • One topic will be provided to each group from formerly given topics.",
-      "• Participants will be short listed for interview session based on the performance of 1st and 2nd round.",
-      "Rules: ",
-      "• Around 7- 8 mins will be given to each group, time of this round can be changed according to time constraints.",
-      "• Groups will be formed randomly from the participants.",
-      "Round 3: Interview Session Round",
-      "• Participants will be evaluated based on their performance in Technical + Non-Technical interview round.",
-      "Rules: ",
-      "• For this round, selected participants need to appear with resume.",
-    ],
-    ImgSrc: "https://i.ibb.co/0sVvSk2/Niyukti-final.png",
-    Student_CoOrdinators: [
-      "Meet Savaj (8758287026)",
-      "Jayesh Maiyani (8200201690)",
-      "Aastha Savaliya (9512466947)",
-      "Vrushant Bhanderi (9537704403)"
-    ],
-    Faculty_CoOrdinators: ["Prof. Jaydeep Gheewala"]
-  },
-  Codechef: {
-    Eventname: "Code Fiesta(Codechef)",
+      Eventvanue: "",
+        Tagline: "Reach the sky or don’t even try",
+          Description: [
+            "It consists of THREE ROUNDS:",
+            "Round 1: Quiz based Round",
+            "• Quiz Topics = Quantitative Aptitude, Logical Reasoning, Verbal Ability.",
+            "Rules: ",
+            "• Quiz will be given by participants through google form in Computer Lab.",
+            "• No online searching activities will be allowed during quiz round.",
+            "• Around 40 questions will be asked. • In case of same score(tie), time factor will be considered.",
+            "Round 2: Group Discussion Round",
+            "• Topics of group discussion will be provided after 1st round to all students who are selected in 2nd round. • One topic will be provided to each group from formerly given topics.",
+            "• Participants will be short listed for interview session based on the performance of 1st and 2nd round.",
+            "Rules: ",
+            "• Around 7- 8 mins will be given to each group, time of this round can be changed according to time constraints.",
+            "• Groups will be formed randomly from the participants.",
+            "Round 3: Interview Session Round",
+            "• Participants will be evaluated based on their performance in Technical + Non-Technical interview round.",
+            "Rules: ",
+            "• For this round, selected participants need to appear with resume.",
+          ],
+            ImgSrc: "https://i.ibb.co/0sVvSk2/Niyukti-final.png",
+              Student_CoOrdinators: [
+                "Meet Savaj (8758287026)",
+                "Jayesh Maiyani (8200201690)",
+                "Aastha Savaliya (9512466947)",
+                "Vrushant Bhanderi (9537704403)"
+              ],
+                Faculty_CoOrdinators: ["Prof. Jaydeep Gheewala"]
+},
+Codechef: {
+  Eventname: "Code Fiesta(Codechef)",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "while !succeed == try():",
-    Description: [
-      "DESCRIPTION ABOUT THE COMPETITION",
-      "This is a CodeChef Coding Competition, which will be hosted on the official CodeChef website. There shall be a total of 10 questions ranging from easy, moderate to difficult. Participants shall receive hundred (100) points for solving each question which includes passing of all test cases. No barrier on usage of any programming language. Time duration of the coding competition will be of 2 hours. If more than one participant has an equal score, then their coding time will be considered for breaking the tie.",
-      "“Code is like humour. When you have to explain it, it’s bad.” – Cory House",
-      "RULES OF THE CODING COMPETITION",
-      "1. You should not have multiple accounts on CodeChef. If you have, then you should participate with only one account. If any tampering related to account is found, it will result in disqualification from the competition.",
-      "2. If you encounter any issue during an ongoing contest, the competition co-ordinators will help you get over it.",
-      "3. You should avoid sharing formulae, logic, or any other significant aspect of your code during a contest. If our plagiarism algorithm finds striking similarities between your code and someone else’s, it will result in disqualification from the competition. If you are taking part in thecompetition, you must take good care of your code. Also, prohibit askingor discussing any aspect of any competition’s problem during an ongoing contest on any other platform, online or offline. Discussion of strategy should be avoided during the contest and postponed till the end",
-    ],
-    ImgSrc: "https://i.ibb.co/nqXN5cq/CODE-FIESTA-FINAL1.jpg",
-    Student_CoOrdinators: [
-      "Yash Shah 9265138118",
-      "Roshan Sah 7228845169",
-      "Shivam Sarang 7226908999",
-      "Hrishikesh Patel 9879191394",
-    ],
-    Faculty_CoOrdinators: [
-      "Prof. Snehal Gandhi",
-      "Prof. Fagun Vankawala"
-    ]
-  },
-  CodeStorm: {
-    Eventname: "Code storm(DSC)",
+      Eventvanue: "",
+        Tagline: "while !succeed == try():",
+          Description: [
+            "DESCRIPTION ABOUT THE COMPETITION",
+            "This is a CodeChef Coding Competition, which will be hosted on the official CodeChef website. There shall be a total of 10 questions ranging from easy, moderate to difficult. Participants shall receive hundred (100) points for solving each question which includes passing of all test cases. No barrier on usage of any programming language. Time duration of the coding competition will be of 2 hours. If more than one participant has an equal score, then their coding time will be considered for breaking the tie.",
+            "“Code is like humour. When you have to explain it, it’s bad.” – Cory House",
+            "RULES OF THE CODING COMPETITION",
+            "1. You should not have multiple accounts on CodeChef. If you have, then you should participate with only one account. If any tampering related to account is found, it will result in disqualification from the competition.",
+            "2. If you encounter any issue during an ongoing contest, the competition co-ordinators will help you get over it.",
+            "3. You should avoid sharing formulae, logic, or any other significant aspect of your code during a contest. If our plagiarism algorithm finds striking similarities between your code and someone else’s, it will result in disqualification from the competition. If you are taking part in thecompetition, you must take good care of your code. Also, prohibit askingor discussing any aspect of any competition’s problem during an ongoing contest on any other platform, online or offline. Discussion of strategy should be avoided during the contest and postponed till the end",
+          ],
+            ImgSrc: "https://i.ibb.co/nqXN5cq/CODE-FIESTA-FINAL1.jpg",
+              Student_CoOrdinators: [
+                "Yash Shah 9265138118",
+                "Roshan Sah 7228845169",
+                "Shivam Sarang 7226908999",
+                "Hrishikesh Patel 9879191394",
+              ],
+                Faculty_CoOrdinators: [
+                  "Prof. Snehal Gandhi",
+                  "Prof. Fagun Vankawala"
+                ]
+},
+CodeStorm: {
+  Eventname: "Code storm(DSC)",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "Storm your skills & go further",
-    Description: [
-      "Number of members per team: 2",
-      "Number of Rounds: 3",
-      "Round 1: C Quiz",
-      "Rules:",
-      "• Quiz will be conducted through google form. ",
-      "• 15 Questions will be asked based on C language (Time limit: 20 mins) ",
-      "• In case of same score time factor will be considered.",
-      "Round 2: Guess the problem statement.",
-      "Rules:",
-      "• The set of codes will be displayed on the screen (one code at a time) and the team who guesses the problem statement first will be qualified for final round.",
-      "Round 3: Pass on the code.",
-      "Rules:",
-      "• You have to complete the code by swapping your position with your team member",
-    ],
-    ImgSrc: "https://i.ibb.co/LkkChTz/Code-storm-Final.png",
-    Student_CoOrdinators: [
-      "Vishwa Patel (9726679768)",
-      "Ishan Mehta (9586443113)",
-      "Kartik Jetani (9106632374)",
-      "Shailja Patel (9727305782)",
-      "Kalp Maniyar (9825725689)",
-    ],
-    Faculty_CoOrdinators: [
-      "Prof Urmi Desai",
-      " Prof Vasundhara Uchhula"
-    ]
-  },
-  BlindCode: {
-    Eventname: "Blind Coding",
+      Eventvanue: "",
+        Tagline: "Storm your skills & go further",
+          Description: [
+            "Number of members per team: 2",
+            "Number of Rounds: 3",
+            "Round 1: C Quiz",
+            "Rules:",
+            "• Quiz will be conducted through google form. ",
+            "• 15 Questions will be asked based on C language (Time limit: 20 mins) ",
+            "• In case of same score time factor will be considered.",
+            "Round 2: Guess the problem statement.",
+            "Rules:",
+            "• The set of codes will be displayed on the screen (one code at a time) and the team who guesses the problem statement first will be qualified for final round.",
+            "Round 3: Pass on the code.",
+            "Rules:",
+            "• You have to complete the code by swapping your position with your team member",
+          ],
+            ImgSrc: "https://i.ibb.co/LkkChTz/Code-storm-Final.png",
+              Student_CoOrdinators: [
+                "Vishwa Patel (9726679768)",
+                "Ishan Mehta (9586443113)",
+                "Kartik Jetani (9106632374)",
+                "Shailja Patel (9727305782)",
+                "Kalp Maniyar (9825725689)",
+              ],
+                Faculty_CoOrdinators: [
+                  "Prof Urmi Desai",
+                  " Prof Vasundhara Uchhula"
+                ]
+},
+BlindCode: {
+  Eventname: "Blind Coding",
     Eventtime: "",
-    Eventvanue: "",
-    Tagline: "“Code beyond your vision",
-    Description: [
-      "It consists of TWO ROUNDS",
-      "Round 1: Touch typing",
-      "• Let’s test your typing speed and accuracy.",
-      "Rules:-",
-      "1. Participants will be given some text to be typed within fixed time duration.",
-      "2. They will be evaluated wrt typing words per minute and typing accuracy.Note: This event will require approx one hour time.",
+      Eventvanue: "",
+        Tagline: "“Code beyond your vision",
+          Description: [
+            "It consists of TWO ROUNDS",
+            "Round 1: Touch typing",
+            "• Let’s test your typing speed and accuracy.",
+            "Rules:-",
+            "1. Participants will be given some text to be typed within fixed time duration.",
+            "2. They will be evaluated wrt typing words per minute and typing accuracy.Note: This event will require approx one hour time.",
 
-      "Round 2: Blind Coding",
-      "• Let's switch off the monitor and do programming !!!",
-      "• In this event basically students will be given a problem and they have to implement error free code in given time while monitor is being kept off.(Code must be implemented in c language)",
-      "Rules:-",
-      "1. Selected participants of round 1 will be given chance for round 2.",
-      "2. During this round, monitor will be kept off.",
-      "3. There are two phases in Round 2. In each phase, separate problem statement will be assigned to participants to be implemented using C language without error.",
-      "4. Participant will be qualified for phase-2 only if he/she clears phase-1 of round-2.",
-      "5. Winners will be selected based on total time taken to solve all the problem statements.",
-      "Note: This event will require approx one hour time.",
-    ],
-    ImgSrc: "https://i.ibb.co/89kvynn/BLIND-CODE-01.jpg",
-    Student_CoOrdinators: ["Chirag Shah (90166 86468)",
-      "Veer Shah (7265892256)",
-      "Hardik Shah (85112 18812)",
-      "Muskan Khatri (75750 83359)"],
-    Faculty_CoOrdinators: ["Prof. Rakesh Patel"]
-  }
+            "Round 2: Blind Coding",
+            "• Let's switch off the monitor and do programming !!!",
+            "• In this event basically students will be given a problem and they have to implement error free code in given time while monitor is being kept off.(Code must be implemented in c language)",
+            "Rules:-",
+            "1. Selected participants of round 1 will be given chance for round 2.",
+            "2. During this round, monitor will be kept off.",
+            "3. There are two phases in Round 2. In each phase, separate problem statement will be assigned to participants to be implemented using C language without error.",
+            "4. Participant will be qualified for phase-2 only if he/she clears phase-1 of round-2.",
+            "5. Winners will be selected based on total time taken to solve all the problem statements.",
+            "Note: This event will require approx one hour time.",
+          ],
+            ImgSrc: "https://i.ibb.co/89kvynn/BLIND-CODE-01.jpg",
+              Student_CoOrdinators: ["Chirag Shah (90166 86468)",
+                "Veer Shah (7265892256)",
+                "Hardik Shah (85112 18812)",
+                "Muskan Khatri (75750 83359)"],
+                Faculty_CoOrdinators: ["Prof. Rakesh Patel"]
+}
 }
 
 const Explore = (props) => {
@@ -511,7 +514,7 @@ const Explore = (props) => {
       setSuccess(true);
       setAlertmsg(response.desc)
       setTimeout(() => {
-          setOpen(false);
+        setOpen(false);
       }, 5000);
     } else if (response.message === "ALREADY_REGISTERED") {
       setAlert(true);
@@ -548,7 +551,7 @@ const Explore = (props) => {
               <DialogTitle id="alert-dialog-title">{"Confirm Your Registration"}</DialogTitle>
               <DialogContent>
                 {/* Alert message */}
-                Enter other member's enrollment no. Not yours.
+                {(EventName !== "Niyukti" && EventName !== "BlindCode")&&<p>Enter other member's enrollment no. Not yours.</p>}
                 <div style={{ position: 'fixed', top: "10px", zIndex: 10, width: "17rem" }} >
                   {success && <Alert severity="success">{alertmsg}</Alert>}
                   {alert && <Alert severity="error">{alertmsg}</Alert>}
