@@ -1,15 +1,4 @@
 import React from 'react';
-import Sponser1 from "./poster/sponser1.png";
-import Sponser2 from "./poster/sponser2.png";
-import Sponser3 from "./poster/sponser3.png";
-import Sponser4 from "./poster/sponser4.png";
-import Sponser5 from "./poster/sponser5.png";
-import Sponser6 from "./poster/sponser6.png";
-import Sponser7 from "./poster/sponser7.png";
-import Sponser8 from "./poster/sponser8.png";
-import Sponser9 from "./poster/sponser9.png";
-
-
 
 
 export default function SponsorCarousel() {
@@ -60,47 +49,47 @@ export default function SponsorCarousel() {
 		<div className="carousel-inner">
 			<div className="carousel-item active" id="card1">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser1} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/rp68ZQD/sponser1.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item" id="card2">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser2} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/HHSK0s5/sponser2.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser3} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/RCywd1w/sponser3.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser4} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/ZJQprz4/sponser4.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser5} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/tzmF98w/sponser5.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser6} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/fH252SC/sponser6.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser7} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/W2JmyVy/sponser7.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser8} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/12mc7vy/sponser8.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 			<div className="carousel-item">
 				<div className="carousel-caption d-sm-none d-md-block">
-				<img src={Sponser9} alt="Event" className="img-fluid"/>
+				<img src={"https://i.ibb.co/6n8WGvZ/sponser9.png"} alt="Event" className="img-fluid"/>
 				</div>
 			</div>
 		</div>
