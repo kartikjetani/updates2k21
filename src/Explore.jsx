@@ -146,10 +146,12 @@ const event_list = {
     Eventvanue: "",
     Tagline: "Debate: Gladiatorial Combat of the Intellect.",
     Description: [
+      "members: 2 for each team",
       "Round 1:", 
       "It will be a debate round where teams will take part in debate for the given topics.The jury will judge the participants based on their performance in the debate and the selected teams will compete each other in the final round.", 
       "Round 2:", 
       "The final round :The presentation Round:Selected teams will have to give presentation on the given topics by Jury.",  
+      "Language: Hindi/English",
       "Rules:",
       "Time for preparation of presentation and speech will be given to the selected teams.",
       "Topics for the presentation will be given on spot by the jury. ",

@@ -269,6 +269,7 @@ export default function SignUp() {
                                     <MenuItem value={"Chemical"}>Chemical</MenuItem>
                                     <MenuItem value={"Mechanical"}>Mechanical</MenuItem>
                                     <MenuItem value={"Environment"}>Environment</MenuItem>
+                                    <MenuItem value={"Environment"}>MCA</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -328,6 +329,13 @@ export default function SignUp() {
                         <Grid item>
                             <NavLink to="/login" variant="body2">
                                 Already have an account? Sign in
+                            </NavLink>
+                        </Grid>
+                    </Grid>
+                    <Grid className="my-3" container justifyContent="flex-end">
+                        <Grid item>
+                            <NavLink to="/Contact" variant="body2">
+                                In Trouble? Then Contact Us 
                             </NavLink>
                         </Grid>
                     </Grid>
